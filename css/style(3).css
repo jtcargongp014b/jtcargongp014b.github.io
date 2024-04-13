@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Scribble&family=Silkscreen:wght@400;700&display=swap");
+
+:root{
+  --primary: rgb(36, 142, 8);
+  --primary-2: rgb(26, 206, 65);
+  --primary-3: rgb(29, 88, 42); 
+  --bg: #010101;
+  --bg-div: #ffffffcc;
+  --bg-div-luar: #fdf0f0b7;
+  --txt-div: #030303;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--bg);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  /* min-height: 5000px; */
+}
+
+.kontak{
+  padding: 7rem 1rem 1.4rem;
+}
+
+.kontak h2{
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.kontak h2 span{
+  color: var(--primary);
+}
+
+.kontak h2{
+  margin-bottom: 1rem;
+}
+
+.kontak p{
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6rem;
+}
+
+/* bagian contact us */
+.text-center {
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-us {
+  background: var(--bg-div-luar);
+  color: var(--txt-div);
+  height: auto;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  border: 0.5rem solid var(--bg);
+  border-radius: 17px;
+}
+
+.map,
+.contact-list {
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 10px;
+  background: var(--bg-div);
+  color: var(--tx t-div);
+}
+/* map */
+
+.map {
+  width: 800px;
+  min-width: 800px;
+}
+
+.maps {
+  flex: 1 1 45rem;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+
+/* contact list */
+
+.contact-list {
+  justify-content: center;
+  max-width: 440px;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  /* border: 1px solid aquamarine; */
+  border-collapse: collapse;
+  font-size: 1.5rem;
+}
+
+tr {
+  /* border: 1px solid black; */
+  padding: 0.75rem;
+  vertical-align: top;
+}
+
+td {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+th {
+  padding: 10px;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+
+/* Footer */
+footer{
+  position: absolute;
+  background: var(--primary);
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.isi-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.isi-footer h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.isi-footer h3 span{
+  font-weight: 700;
+  font-style: italic;
+}
+.isi-footer p{
+  max-width: 500px;
+  margin: 10px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.sos{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem;
+}
+.sos li{
+  margin: 0 10px;
+}
+.sos a{
+  text-decoration: none;
+  color: #fff;
+}
+.sos a i{
+  transition: color .4s ease;
+
+}
+.sos a:hover i{
+  color: var(--primary-2);
+}
+
+.footer-bawah{
+  background: var(--primary-3);
+  border-radius: 70% 70% 0px 0px;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bawah p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bawah span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+
+
+hr{
+  background-color: #fff;
+  height: 5px;
+  opacity: 0.5;
+  border-radius: 40px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* border: 0;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-top-color: currentcolor; */
+  border: 1px solid rgba(0, 0, 0, 0.986);
+  /* box-sizing: content-box; */
+  /* height: 0; */
+  /* overflow: visible; */
+}
+
+::selection{
+  color: #fff;
+  background-color: var(--primary-2);
+}

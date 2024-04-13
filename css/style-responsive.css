@@ -1,0 +1,394 @@
+@media (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+  .main .card-main {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .map {
+    min-width: 550px;
+  }
+}
+
+/* @media (max-width: 992px) {
+
+} */
+
+@media (max-width: 970px) {
+  .contact-us {
+    flex-wrap: wrap;
+  }
+  .map {
+    height: 500px;
+  }
+  .contact-list {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 950px) {
+  .main,
+  .box {
+    flex-wrap: wrap;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+  }
+  .btn2 a {
+    font-size: 25px;
+  }
+  .box .col-4 {
+    margin: 0 1.5rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .about .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 790px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgb(1, 1, 1, 0.8);
+    width: 30rem;
+    height: auto;
+    transition: 0.5s;
+    border-radius: 8px;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg-txt);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.4);
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
+  }
+  .about .keunggulan{
+    gap: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .about .keunggulan .box-card{
+    margin: 0.5rem;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: auto;
+    transition: 0.5s;
+    border-radius: 8px;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.4);
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* .about .row .content {
+    padding: 0;
+  } */
+
+  /* .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
+  } */
+
+  .menu p {
+    font-size: 1.2rem;
+  }
+  .box .col-4 {
+    margin: 0 1rem;
+    padding: 0.2rem;
+  }
+  .btn2 a {
+    font-size: 23px;
+  }
+  .btn1:active {
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    background-color: var(--primary);
+    cursor: pointer;
+    border-radius: 4px;
+    color: var(--txt-col);
+  }
+  .main .card-main {
+    padding: 15px;
+    width: 180px;
+  }
+  .main .card-main img {
+    margin-bottom: 0.5rem;
+    width: 140px;
+    height: 140px;
+  }
+  .map {
+    min-width: 300px;
+    height: 360px;
+  }
+  .about p{
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 730px){
+  .about .keunggulan .box-card{
+    width: 250px;
+    height: 170px;
+  }
+  .about .keunggulan .box-card img{
+    width: 80px;
+  }
+  .about .keunggulan .box-card h3{
+    font-size: 1.2rem;
+  }
+  
+  .about .keunggulan .box-card p{
+    font-size: 10px;
+  }
+  .kenapa{
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .about .keunggulan .box-card{
+    width: 200px;
+    height: 130px;
+  }
+  .about .keunggulan .box-card img{
+    width: 65px;
+  }
+  .about .keunggulan .box-card h3{
+    font-size: 1.1rem;
+  }
+  .about .keunggulan .box-card p{
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .row .content p{
+    font-size: 1.2rem;
+  }
+  .about .row .content h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .about .keunggulan .box-card{
+    width: 150px;
+    height: 130px;
+  }
+  .about .keunggulan .box-card img{
+    width: 57px;
+  }
+  .about .keunggulan .box-card h3{
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 465px) {
+  html {
+    font-size: 55%;
+  }
+  .box .col-4 {
+    margin: 0 0.4rem;
+  }
+  .box .col-4 h4 {
+    margin: 10px 0;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+  }
+  .btn2 a {
+    font-size: 20px;
+  }
+  .bisnis p strong {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .kenapa{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 370px) {
+  html {
+    font-size: 50%;
+  }
+  .bisnis .main .card-main div .btn1{
+    font-size: 10px;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+  .btn2 a {
+    font-size: 18px;
+  }
+  .btn2 {
+    margin: 1rem 0.5rem;
+  }
+  .main .card-main {
+    margin: 1rem;
+    padding: 15px;
+    width: 140px;
+  }
+  .main .card-main img {
+    margin-bottom: 0.5rem;
+    width: 100px;
+    height: 100px;
+  }
+  .about .keunggulan .box-card{
+    width: 110px;
+    height: 135px;
+  }
+  .about .keunggulan .box-card img{
+    width: 57px;
+  }
+  .about .keunggulan .box-card h3{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .main .card-main{
+    margin: 0.5rem;
+    padding: 13px;
+    width: 130px;
+  }
+  .main .card-main img {
+    margin-bottom: 0.5rem;
+    width: 95px;
+    height: 95px;
+  }
+  .btn1 {
+    padding: 2px 6px;
+  }
+  .main .card-main .btn1 a{
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 305px){
+  .main .card-main{
+    margin: 0.2rem;
+    padding: 10px;
+    width: 120px;
+  }
+  .main .card-main img {
+    margin-bottom: 0.3rem;
+    width: 90px;
+    height: 90px;
+  }
+}

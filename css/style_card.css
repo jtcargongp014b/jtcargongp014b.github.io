@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Silkscreen:wght@400;700&display=swap");
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+  --card-height-1: 55vh;
+  --card-width-1: calc(var(--card-height-1) / 1.5);
+}
+body {
+  height: auto;
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.card {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+  margin: 4rem;
+}
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+.card::before {
+  content: "";
+  height: 100%;
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var (--rotate),
+    #5ddcff,
+    #3c67e3 433%,
+    #4e00c2
+  );
+  position: absolute;
+  top: 0;
+  left: -1px;
+  z-index: -1;
+  animation: spin 2.5s linear infinite;
+}
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+}
+a {
+  font-family: "Rubik Scribble", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  color: #212534;
+  text-decoration: none;
+  /* font-family: sans-serif;
+    font-weight: bold; */
+  margin-top: 0.7rem;
+}
+
+.img-conten-2 {
+  width: 50%;
+  border: 4px solid black;
+  border-radius: 50%;
+}
+
+.a-conten {
+  background-color: white;
+  text-decoration: none;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 70%;
+  color: black;
+  font-size: 30px;
+  border-radius: 65px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 75);
+}
+p {
+  color: rgb(32, 111, 148);
+}
+.a-conten:hover {
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  transition: 0.2s ease-in-out;
+  transition-delay: 2s;
+  border-radius: 90px;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 70%;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 1rem;
+  }
+  a p{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 65%;
+  }
+  .card {
+    width: var(--card-width-1);
+    height: var(--card-width-1);
+  }
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
